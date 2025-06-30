@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KRITERIA WAJIB: Custom list item untuk RecyclerView chat -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="12dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo1"
+            android:background="@drawable/grey_full_corner_bg"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        
+        <View
+            android:id="@+id/unreadIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/red_circle"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toTopOf="@+id/companyLogo" />
+
+        
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="Google Inc."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/approvalButtons"
+            app:layout_constraintStart_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toTopOf="@+id/companyLogo" />
+
+        <TextView
+            android:id="@+id/recruiterName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:text="Sarah Johnson"
+            android:textColor="@color/purple"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/approvalButtons"
+            app:layout_constraintStart_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:text="Senior Software Engineer"
+            android:textColor="@color/darkGrey"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/approvalButtons"
+            app:layout_constraintStart_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toBottomOf="@+id/recruiterName" />
+
+        
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Hi! I saw your profile and I'm impressed..."
+            android:textColor="@color/darkGrey"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/approvalButtons"
+            app:layout_constraintStart_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+        
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="2h ago"
+            android:textColor="@color/darkGrey"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/companyLogo"
+            app:layout_constraintTop_toBottomOf="@+id/lastMessage" />
+
+        
+        <LinearLayout
+            android:id="@+id/approvalButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/approveButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="✓"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/grey_full_corner_bg"
+                android:backgroundTint="@color/green"
+                android:layout_marginBottom="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+            <TextView
+                android:id="@+id/rejectButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="✗"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/grey_full_corner_bg"
+                android:backgroundTint="@color/red"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView> 

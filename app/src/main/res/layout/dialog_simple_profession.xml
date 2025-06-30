@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/white_bg"
+    android:layout_margin="16dp">
+
+    
+    <TextView
+        android:id="@+id/professionDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Set Your Professional Role"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    
+    <TextView
+        android:id="@+id/professionDialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Enter your profession or job title"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Current Profession:"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    
+    <TextView
+        android:id="@+id/currentProfessionDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/grey_bg"
+        android:padding="12dp"
+        android:text="Not set"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="New Profession:"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    
+    <EditText
+        android:id="@+id/professionInputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/white_bg_border"
+        android:padding="12dp"
+        android:hint="Enter your profession (e.g., UI Designer, Software Engineer)"
+        android:inputType="textCapWords"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+    
+    <TextView
+        android:id="@+id/professionErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Please enter a valid profession"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:background="@drawable/red_bg" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        
+        <TextView
+            android:id="@+id/closeProfessionDialog"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/grey_bg"
+            android:text="Close"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+        
+        <TextView
+            android:id="@+id/editProfessionButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/green_bg"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout> 

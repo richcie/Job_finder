@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KRITERIA WAJIB: Custom list item untuk RecyclerView -->
+<!-- KRITERIA KOMPLEKSITAS: 2-way data binding dengan reactive UI -->
+<!-- KRITERIA WAJIB: Custom list item untuk RecyclerView job -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/white_bg_border">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pic"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/CicleImageView"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Job Title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/pic"
+            app:layout_constraintTop_toTopOf="@+id/pic" />
+
+        
+        <TextView
+            android:id="@+id/companyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textColor="@color/darkGrey"
+            app:layout_constraintBottom_toBottomOf="@+id/pic"
+            app:layout_constraintStart_toStartOf="@+id/titleTxt" />
+
+        
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_bookmark_outline"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTxt" />
+
+        
+        <TextView
+            android:id="@+id/ownedJobBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/red_badge_bg"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="Owned Job"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/titleTxt" />
+
+        
+        <TextView
+            android:id="@+id/closedJobBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/grey_bg"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="Closed"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ownedJobBadge" />
+
+        
+        <LinearLayout
+            android:id="@+id/viewCountContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pic">
+
+            <ImageView
+                android:id="@+id/viewCountIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/bell"
+                app:tint="@color/darkGrey" />
+
+            
+            <TextView
+                android:id="@+id/viewCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 views"
+                android:textColor="@color/darkGrey"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewCountContainer">
+
+            
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.333"
+                android:background="@drawable/grey_bg"
+                android:gravity="center"
+                android:text="N/A"
+                android:textColor="@color/black" />
+
+            
+            <TextView
+                android:id="@+id/modelTxt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="0.333"
+                android:background="@drawable/grey_bg"
+                android:gravity="center"
+                android:text="N/A"
+                android:textColor="@color/black" />
+
+            
+            <TextView
+                android:id="@+id/levelTxt"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.333"
+                android:background="@drawable/grey_bg"
+                android:gravity="center"
+                android:text="N/A"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/darkGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/salaryTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="$ - $"
+                android:textColor="@color/purple"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/month" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

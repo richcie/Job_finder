@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KRITERIA WAJIB: Custom list item untuk pesan diterima -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="start"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/grey_full_corner_bg"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:maxWidth="280dp">
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi! I saw your profile and I'm impressed with your experience."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp"
+            android:text="14:25"
+            android:textColor="@color/darkGrey"
+            android:textSize="11sp"
+            android:background="@drawable/timestamp_bg"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

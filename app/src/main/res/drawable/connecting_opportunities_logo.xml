@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background circle -->
+    <path android:fillColor="#F8F9FA"
+        android:pathData="M100,100m-95,0a95,95 0,1 1,190 0a95,95 0,1 1,-190 0"/>
+    
+    <!-- Connecting hands symbol at the top -->
+    <group android:translateX="100" android:translateY="70" android:scaleX="1.5" android:scaleY="1.5">
+        <!-- Left hand reaching -->
+        <path android:strokeWidth="4"
+            android:strokeColor="#2C3E50"
+            android:strokeLineCap="round"
+            android:pathData="M-25,0 Q-30,-8 -20,-12 Q-15,-8 -10,-5"/>
+        
+        <!-- Right hand reaching -->
+        <path android:strokeWidth="4"
+            android:strokeColor="#2C3E50"
+            android:strokeLineCap="round"
+            android:pathData="M25,0 Q30,-8 20,-12 Q15,-8 10,-5"/>
+        
+        <!-- Connection sparkles -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M0,-15 L3,-10 L0,-5 L-3,-10 Z"/>
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-5,-10 L0,-7 L5,-10 L0,-13 Z"/>
+        <path android:fillColor="#2C3E50"
+            android:pathData="M0,-8 L2,-6 L0,-4 L-2,-6 Z"/>
+    </group>
+    
+    <!-- "CONNECTING" text -->
+    <group android:translateX="100" android:translateY="120">
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-45,0 Q-48,0 -48,3 L-48,12 Q-48,15 -45,15 L-36,15 Q-33,15 -33,12 Q-33,9 -36,9 L-42,9 L-42,6 L-36,6 Q-33,6 -33,3 Q-33,0 -36,0 Z"/>
+        <!-- More letters for CONNECTING would go here, simplified for space -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-30,0 Q-33,0 -33,3 L-33,9 Q-33,12 -30,12 L-24,12 Q-21,12 -21,9 L-21,3 Q-21,0 -24,0 Z M-27,3 L-27,9 L-24,9 L-24,3 Z"/>
+    </group>
+    
+    <!-- "OPPORTUNITIES" text -->
+    <group android:translateX="100" android:translateY="145" android:scaleX="0.9" android:scaleY="0.9">
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-50,0 Q-53,0 -53,3 L-53,9 Q-53,12 -50,12 L-44,12 Q-41,12 -41,9 L-41,3 Q-41,0 -44,0 Z M-47,3 L-47,9 L-44,9 L-44,3 Z"/>
+        <!-- More letters for OPPORTUNITIES would go here, simplified for space -->
+    </group>
+    
+</vector> 

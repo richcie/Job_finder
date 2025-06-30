@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Main hands connecting symbol - simplified for icon clarity -->
+    <group android:translateX="54" android:translateY="45">
+        <!-- Left hand simplified -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-18,5 Q-20,0 -15,-5 Q-10,0 -8,5 Q-10,8 -15,8 Q-18,8 -18,5 Z"/>
+        
+        <!-- Right hand simplified -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M18,5 Q20,0 15,-5 Q10,0 8,5 Q10,8 15,8 Q18,8 18,5 Z"/>
+        
+        <!-- Connection spark in the middle -->
+        <path android:fillColor="#34495E"
+            android:pathData="M0,-2 L3,2 L0,6 L-3,2 Z"/>
+        <path android:fillColor="#34495E"
+            android:pathData="M-4,2 L0,5 L4,2 L0,-1 Z"/>
+    </group>
+    
+    <!-- Text representation - "CO" for Connecting Opportunities -->
+    <group android:translateX="54" android:translateY="70" android:scaleX="1.2" android:scaleY="1.2">
+        <!-- C -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-12,0 Q-16,0 -16,4 L-16,8 Q-16,12 -12,12 L-8,12 L-8,9 L-12,9 Q-13,9 -13,8 L-13,4 Q-13,3 -12,3 L-8,3 L-8,0 Z"/>
+        
+        <!-- O -->
+        <path android:fillColor="#2C3E50"
+            android:pathData="M-4,0 Q-8,0 -8,4 L-8,8 Q-8,12 -4,12 L0,12 Q4,12 4,8 L4,4 Q4,0 0,0 Z M-1,3 L-1,9 L1,9 L1,3 Z"/>
+    </group>
+    
+    <!-- Decorative dots for "Opportunities" using path circles -->
+    <group android:translateX="54" android:translateY="85">
+        <path android:fillColor="#7F8C8D" android:pathData="M-15,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M-10,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M-5,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M0,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M5,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M10,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+        <path android:fillColor="#7F8C8D" android:pathData="M15,0m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0"/>
+    </group>
+    
+</vector>

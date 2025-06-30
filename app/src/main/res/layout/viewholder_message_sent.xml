@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KRITERIA WAJIB: Custom list item untuk pesan terkirim -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="end"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/purple_full_corner"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:maxWidth="280dp">
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello! I'm interested in this position."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="14:30"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:alpha="0.9"
+            android:background="@drawable/timestamp_bg"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 
